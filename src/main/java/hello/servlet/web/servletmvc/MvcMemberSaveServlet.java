@@ -23,7 +23,7 @@ public class MvcMemberSaveServlet extends HttpServlet {
         System.out.println("member = " + member);
         memberRepository.save(member);
 
-        //Model¿¡ µ¥ÀÌÅÍ¸¦ º¸°üÇÑ´Ù.
+        //Modelì— ë°ì´í„°ë¥¼ ë³´ê´€í•œë‹¤.
         request.setAttribute("member", member);
 
         String viewPath = "/WEB-INF/views/save-result.jsp";
